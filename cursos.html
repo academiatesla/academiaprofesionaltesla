@@ -1,1 +1,103 @@
-i
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Disponibles | Academia Profesional Tesla</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; line-height: 1.6; }
+        nav { background-color: #f8f9fa; border-bottom: 2px solid #0056b3; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { text-decoration: none; color: #0056b3; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+        h1 { color: #0056b3; text-align: center; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
+        
+        .curso-card { border: 1px solid #e1e1e1; border-radius: 8px; padding: 25px; margin-bottom: 25px; transition: 0.3s; }
+        .curso-card:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-color: #0056b3; }
+        
+        .curso-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; margin-bottom: 15px; padding-bottom: 10px; }
+        .curso-titulo { font-size: 1.4em; color: #0056b3; font-weight: bold; }
+        .curso-precio { background: #28a745; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9em; }
+        
+        .detalles { font-size: 0.95em; color: #555; }
+        .temas { margin-top: 10px; padding-left: 20px; }
+        
+        .btn-inscribir { display: inline-block; background-color: #0056b3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; margin-top: 15px; font-weight: bold; }
+        .footer { text-align: center; font-size: 12px; margin-top: 50px; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pago.html">Forma de Pago</a></li>
+            <li><a href="planilla.html">Planilla</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="aulas.html">Aulas</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>OFERTA ACADÉMICA 2026</h1>
+        <p style="text-align:center;">Formación técnica especializada dirigida por el <b>Director José Gregorio Hernández</b>.</p>
+
+        <div class="curso-card">
+            <div class="curso-header">
+                <div class="curso-titulo">Hardware y Microsoldadura Avanzada</div>
+                <div class="curso-precio">Inscripción: $10</div>
+            </div>
+            <div class="detalles">
+                <p>Especialízate en la reparación física de componentes electrónicos, diagnóstico de placas base y técnicas de soldadura de alta precisión.</p>
+                <ul class="temas">
+                    <li>Uso de estación de calor y cautín profesional.</li>
+                    <li>Identificación de fallas en circuitos integrados.</li>
+                    <li>Mantenimiento preventivo y correctivo de hardware.</li>
+                </ul>
+            </div>
+            <a href="planilla.html" class="btn-inscribir">Reservar Cupo</a>
+        </div>
+
+        <div class="curso-card">
+            <div class="curso-header">
+                <div class="curso-titulo">Sistemas, Redes y Seguridad Informática</div>
+                <div class="curso-precio">Inscripción: $10</div>
+            </div>
+            <div class="detalles">
+                <p>Aprende a configurar infraestructuras de red sólidas y proteger la información contra amenazas externas.</p>
+                <ul class="temas">
+                    <li>Configuración de routers, switches y redes inalámbricas.</li>
+                    <li>Administración de sistemas operativos y servidores.</li>
+                    <li>Protocolos de seguridad y protección de datos.</li>
+                </ul>
+            </div>
+            <a href="planilla.html" class="btn-inscribir">Reservar Cupo</a>
+        </div>
+
+        <div class="curso-card">
+            <div class="curso-header">
+                <div class="curso-titulo">Introducción a la Inteligencia Artificial (Génesis IA)</div>
+                <div class="curso-precio">Inscripción: $10</div>
+            </div>
+            <div class="detalles">
+                <p>Un curso visionario sobre cómo aplicar la IA en la resolución de problemas técnicos y optimización de procesos mediante el sistema <b>Bodegalicia</b>.</p>
+                <ul class="temas">
+                    <li>Fundamentos de modelos de lenguaje e IA.</li>
+                    <li>Automatización de tareas técnicas con apoyo de Génesis IA.</li>
+                    <li>Futuro de la tecnología y biotecnología aplicada.</li>
+                </ul>
+            </div>
+            <a href="planilla.html" class="btn-inscribir">Reservar Cupo</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Academia Profesional Tesla | Proyecto Educativo System Gregory PC</p>
+            <p>Sede San Cristóbal - Aula Virtual para Caracas y el Exterior</p>
+        </div>
+    </div>
+
+</body>
+</html>
