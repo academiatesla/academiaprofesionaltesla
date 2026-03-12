@@ -3,99 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planilla de Registro | Academia Profesional Tesla</title>
+    <title>Registro Automatizado | Academia Profesional Tesla</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; line-height: 1.6; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; margin: 0; padding: 0; }
+        nav { background-color: #f8f9fa; border-bottom: 2px solid #0056b3; padding: 15px; text-align: center; }
+        nav a { text-decoration: none; color: #0056b3; font-weight: bold; margin: 0 15px; text-transform: uppercase; font-size: 14px; }
         
-        /* Menú Superior */
-        nav { background-color: #f8f9fa; border-bottom: 2px solid #0056b3; padding: 15px; position: sticky; top: 0; z-index: 1000; }
-        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
-        nav ul li { margin: 0 15px; }
-        nav ul li a { text-decoration: none; color: #0056b3; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        .container { max-width: 900px; margin: 20px auto; padding: 20px; text-align: center; }
+        h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
+        
+        /* Contenedor del Formulario que conecta al Excel */
+        .form-wrapper { position: relative; padding-bottom: 120%; height: 0; overflow: hidden; border: 1px solid #ddd; border-radius: 8px; }
+        .form-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
-        .container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border: 1px solid #e1e1e1; border-radius: 8px; }
-        h1 { color: #0056b3; text-align: center; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
-        
-        form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
-        .full-width { grid-column: span 2; }
-        
-        label { font-weight: bold; display: block; margin-bottom: 5px; color: #555; }
-        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        
-        .instrucciones-planilla { background: #e7f3ff; padding: 20px; border-radius: 5px; margin-bottom: 20px; font-size: 0.9em; }
-        
-        .btn-enviar { grid-column: span 2; background-color: #28a745; color: white; padding: 15px; border: none; border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 20px; }
-        .btn-enviar:hover { background-color: #218838; }
-
-        .footer { text-align: center; font-size: 12px; margin-top: 50px; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
+        .footer { text-align: center; font-size: 12px; margin-top: 40px; color: #888; padding: 20px; }
     </style>
 </head>
 <body>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pago.html">Forma de Pago</a></li>
-            <li><a href="planilla.html">Planilla</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="aulas.html">Aulas</a></li>
-        </ul>
+        <a href="index.html">Inicio</a>
+        <a href="pago.html">Forma de Pago</a>
+        <a href="planilla.html">Planilla</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
 
     <div class="container">
-        <h1>PLANILLA DE REGISTRO 2026</h1>
-        
-        <div class="instrucciones-planilla">
-            <strong>Instrucciones:</strong> Complete todos los campos solicitados. Al finalizar, haga clic en "Enviar Registro" para notificar a la administración de la Academia Profesional Tesla. Recuerde haber realizado el pago previamente.
+        <h1>REGISTRO OFICIAL 2026</h1>
+        <p>Complete sus datos a continuación. La información se procesará mediante el sistema de control de <b>Génesis IA</b> y se guardará en nuestra base de datos segura.</p>
+
+        <div class="form-wrapper">
+            <iframe src="AQUI_VA_EL_ENLACE_DE_SU_GOOGLE_FORM">Cargando formulario...</iframe>
         </div>
 
-        <form action="mailto:academia8profesional8tesla@gmail.com" method="post" enctype="text/plain">
-            <div>
-                <label>Nombres Completos:</label>
-                <input type="text" name="Nombres" required>
-            </div>
-            <div>
-                <label>Apellidos Completos:</label>
-                <input type="text" name="Apellidos" required>
-            </div>
-            <div>
-                <label>Cédula de Identidad / ID:</label>
-                <input type="text" name="Cedula" required>
-            </div>
-            <div>
-                <label>Teléfono de Contacto:</label>
-                <input type="tel" name="Telefono" placeholder="Ej: 0412-0000000" required>
-            </div>
-            <div class="full-width">
-                <label>Correo Electrónico:</label>
-                <input type="email" name="Email_Alumno" required>
-            </div>
-            <div class="full-width">
-                <label>Curso a Inscribirse:</label>
-                <select name="Curso" required>
-                    <option value="">Seleccione un curso...</option>
-                    <option value="Hardware_Microsoldadura">Reparación de Hardware y Microsoldadura</option>
-                    <option value="Redes_Seguridad">Configuración de Redes y Seguridad</option>
-                    <option value="Computacion_Electronica">Técnico en Computación y Electrónica</option>
-                    <option value="Genesis_IA_Basico">Introducción a Génesis IA</option>
-                </select>
-            </div>
-            <div class="full-width">
-                <label>Referencia de Pago (N° de Transacción):</label>
-                <input type="text" name="Referencia_Pago" placeholder="Ej: Pago Móvil / Referencia PayPal" required>
-            </div>
-            <div class="full-width">
-                <label>Dirección de Habitación (Ciudad/Estado):</label>
-                <textarea name="Direccion" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn-enviar">ENVIAR REGISTRO A LA ACADEMIA</button>
-        </form>
-
         <div class="footer">
-            <p>© 2026 Academia Profesional Tesla | Registro Control de Estudios</p>
-            <p>System Gregory PC - San Cristóbal</p>
+            <p>© 2026 Academia Profesional Tesla | Gestión de Datos System Gregory PC</p>
         </div>
     </div>
 
