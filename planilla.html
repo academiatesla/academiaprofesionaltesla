@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Automatizado | Academia Profesional Tesla</title>
+    <title>Planilla de Registro - Academia Tesla</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; margin: 0; padding: 0; }
-        nav { background-color: #f8f9fa; border-bottom: 2px solid #0056b3; padding: 15px; text-align: center; }
-        nav a { text-decoration: none; color: #0056b3; font-weight: bold; margin: 0 15px; text-transform: uppercase; font-size: 14px; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; }
+        nav { background-color: #f8f9fa; border-bottom: 2px solid #0056b3; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { text-decoration: none; color: #0056b3; font-weight: bold; margin: 0 15px; text-transform: uppercase; font-size: 13px; }
+        .container { max-width: 900px; margin: 20px auto; padding: 0 20px; text-align: center; }
+        h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; text-transform: uppercase; }
         
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; text-align: center; }
-        h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
-        
-        /* Contenedor del Formulario que conecta al Excel */
-        .form-wrapper { position: relative; padding-bottom: 120%; height: 0; overflow: hidden; border: 1px solid #ddd; border-radius: 8px; }
-        .form-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-
-        .footer { text-align: center; font-size: 12px; margin-top: 40px; color: #888; padding: 20px; }
+        .form-window { 
+            width: 100%; 
+            height: 1200px; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        iframe { width: 100%; height: 100%; border: none; }
+        .footer { text-align: center; font-size: 11px; margin-top: 40px; color: #888; padding: 20px; }
     </style>
 </head>
 <body>
@@ -30,16 +34,16 @@
     </nav>
 
     <div class="container">
-        <h1>REGISTRO OFICIAL 2026</h1>
-        <p>Complete sus datos a continuación. La información se procesará mediante el sistema de control de <b>Génesis IA</b> y se guardará en nuestra base de datos segura.</p>
+        <h1>PLANILLA DE REGISTRO 2026</h1>
+        <p>Complete sus datos para ingresar al sistema de la <b>Academia Profesional Tesla</b>.</p>
 
-        <div class="form-wrapper">
-            <iframe src="https://docs.google.com/forms/d/1ADzDcsmR_EIuYDvAWMTE8jUjuEG2WmelbXJG2p_RQEw/preview">Cargando formulario...</iframe>
+        <div class="form-window">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_Y75A8u4M4Xyv8yU0vW_W9m-0F8z_L-Y_P-G-X_L-Y_P-G/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
         </div>
+    </div>
 
-        <div class="footer">
-            <p>© 2026 Academia Profesional Tesla | Gestión de Datos System Gregory PC</p>
-        </div>
+    <div class="footer">
+        <p>© 2026 Academia Profesional Tesla | Gestión de System Gregory PC</p>
     </div>
 
 </body>
