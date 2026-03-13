@@ -1,1 +1,94 @@
-i
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas Virtuales - Academia Tesla</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 0; }
+        nav { background-color: #f8f9fa; border-bottom: 2px solid #0056b3; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { text-decoration: none; color: #0056b3; font-weight: bold; margin: 0 15px; text-transform: uppercase; font-size: 13px; }
+        
+        .hero { background-color: #0056b3; color: white; padding: 40px 20px; text-align: center; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
+        
+        .aula-card { 
+            background: white; 
+            border-radius: 12px; 
+            padding: 30px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .status-badge { background: #ffcc00; color: #000; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+
+        .btn-access { 
+            display: inline-block; 
+            background-color: #d93025; /* Rojo Google */
+            color: white; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-access:hover { background-color: #b2261e; transform: scale(1.05); }
+
+        .info-box { background: #e8f0fe; border-left: 5px solid #1a73e8; padding: 15px; margin-top: 20px; text-align: left; }
+        
+        iframe { width: 100%; height: 500px; border: 1px solid #ccc; border-radius: 8px; margin-top: 20px; }
+
+        .footer { text-align: center; font-size: 11px; margin-top: 40px; color: #888; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="pago.html">Forma de Pago</a>
+        <a href="planilla.html">Planilla</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="hero">
+        <h1>ZONA DE CLASES EN LÍNEA</h1>
+        <p>Plataforma Académica bajo tecnología Google Workspace</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="aula-card">
+            <span class="status-badge">ACCESO RESTRINGIDO</span>
+            <h2>Aula Virtual Tesla 2026</h2>
+            <p>Para ingresar al salón de clases y al chat en vivo, es <b>obligatorio</b> iniciar sesión con su cuenta <b>Gmail</b> registrada.</p>
+            
+            <div class="info-box">
+                <strong>Instrucciones para el Alumno:</strong>
+                <ul>
+                    <li>Tener el pago de inscripción ($10) verificado.</li>
+                    <li>Estar dentro de su cuenta de Google/Gmail.</li>
+                    <li>Haga clic en el botón de abajo para entrar al Classroom o Videollamada.</li>
+                </ul>
+            </div>
+
+            <a href="https://classroom.google.com" target="_blank" class="btn-access">ENTRAR AL AULA (GOOGLE CLASSROOM)</a>
+        </div>
+
+        <div class="aula-card">
+            <h2>Chat en Vivo y Soporte Técnico</h2>
+            <p>Use el chat de Google para consultas directas con el Maestro José Gregorio.</p>
+            <iframe src="https://mail.google.com/chat/u/0/" title="Google Chat"></iframe>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Academia Profesional Tesla | Gestión de System Gregory PC</p>
+        <p>Seguridad y Biotecnología Aplicada</p>
+    </div>
+
+</body>
+</html>
